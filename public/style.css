@@ -1,0 +1,98 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', 'Poppins', 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+  
+video {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100vw;      
+    height: 100vh;    
+    object-fit: cover; 
+    z-index: -1; 
+}
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+h1,p {
+    position: relative;
+    z-index: 1;
+    color: #f5f7fa;
+    text-shadow: 0 2px 6px rgba(10,24,43,0.25);
+}
+p {
+    padding-top: 1.5rem;
+}
+.card {
+    background: rgba(40, 86, 113, 0);
+    border-radius: 28px;
+    box-shadow:
+      0 8px 32px 0 rgba(8,32,68,0.32),
+      0 1.5px 24px 0 rgba(70,170,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(18px) brightness(1.14);
+    padding: 2.8rem 3.5rem 2.5rem 3.5rem;
+    margin-top: 3.5rem;
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    transition: box-shadow 0.4s cubic-bezier(.4,2,.3,1);
+    z-index: 2;
+}
+  
+  
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    background: linear-gradient(97deg, #e0eafc 0%, #cfdef3 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 1.1rem;
+    letter-spacing: 1px;
+}
+  
+p {
+    font-size: 1.18rem;
+    color: #e6f0fa;
+    font-weight: 400;
+    letter-spacing: 0.06rem;
+    margin-top: 0;
+}
+.accent-bar {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #3ec6e0 0%, #275997 100%);
+    border-radius: 2px;
+    margin: 15px 0 0 2px;
+}
+.btn {
+    color: #e6f0fa;
+    background-color: coral;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+}
+.btn i{
+    margin-left: 1rem;
+}
+
+
+
+
+
+  
+  
+  
