@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Shopper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="search container">
+        <form action="/search" method="GET">
+            <input type="text" placeholder="Search..." name="query" class="search-input">
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+
+    </div>
+    <div class="header">
+        <img src="./images.png/WhatsApp Image 2024-09-20 at 11.17.02.jpeg" height="50"/>
+        <img src="./images.png/shoppping cart.jpeg" height="30px" class="cart"/>
+        <p class="MEN"><b><a href="./descriptions.html/MEN.html">MEN</a></b></p>
+        <p class="WOMEN"><b><a href="./descriptions.html/WOMEN.html">WOMEN</a></b></p>
+        <p class="KIDS"><b><a href="./descriptions.html/KIDS.html">KIDS</a></b></p>
+        <p class="HOME"><b><a href="./descriptions.html/HOME.html">HOME & LIVING</a></b></p>
+        <p class="BEAUTY"><b><a href="./descriptions.html/BEAUTY.html">BEAUTY</a></b></p>
+    </div>
+    <div id="products"></div>
+    <div class="product1">
+        <img src="./images.png/Tshirt.jpeg" class="product-image1">
+        <h2 class="product-title1">T-shirt</h2>
+        <p class="product-price1">$40</p>
+        <button class="add-to-cart">Add To cart</button>
+    </div>
+    <div class="product2">
+        <img src="./images.png/shirt.jpeg" class="product-image2">
+        <h2 class="product-title2">Shirt</h2>
+        <p class="product-price2">$50</p>
+        <button class="add-to-cart2">Add To cart</button>
+    </div>
+    <div class="product3">
+        <img src="./images.png/fragrance.jpeg" class="product-image3">
+        <h2 class="product-title3">Fragrance</h2>
+        <p class="product-price3">$100</p>
+        <button class="add-to-cart3">Add To cart</button>
+
+    </div>
+    <div class="product4">
+        <img src="./images.png/furniture.jpeg" class="product-image4">
+        <h2 class="product-title4">furniture</h2>
+        <p class="product-price4">$700</p>
+        <button class="add-to-cart4">Add To cart</button>
+        
+    </div>
+    <div class="product5">
+        <img src="./images.png/saree.jpeg" class="product-image5">
+        <h2 class="product-title5">saree</h2>
+        <p class="product-price5">$500</p>
+        <button class="add-to-cart5">Add To cart</button>
+
+    </div>
+    <div class="product6">
+        <img src="./images.png/bodycare.jpeg" class="product-image6">
+        <h2 class="product-title6">Body CARE</h2>
+        <p class="product-price6">$150</p>
+        <button class="add-to-cart6">Add To cart</button>
+
+    </div>
+    <body>
+        <div class="order-container">
+            <h2>Checkout</h2>
+    
+            <form action="/process-order" method="POST">
+                <!-- Customer Details -->
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="Enter your city" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="zip">ZIP Code:</label>
+                    <input type="text" id="zip" name="zip" placeholder="Enter your ZIP code" required>
+                </div>
+    
+                <!-- Payment Details -->
+                <h3>Payment Details</h3>
+                <div class="form-group">
+                    <label for="card-name">Name on Card:</label>
+                    <input type="text" id="card-name" name="card_name" placeholder="Cardholder's name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card_number" placeholder="XXXX XXXX XXXX XXXX" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" name="expiry_date" placeholder="MM/YY" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+                </div>
+    
+                <!-- Submit Order -->
+                <button type="submit" class="order-btn">Place Order</button>
+            </form>
+        </div>
+    
+    
+</body>
+</html>
